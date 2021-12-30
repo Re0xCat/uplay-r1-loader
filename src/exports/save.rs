@@ -10,9 +10,9 @@ use ustr::Ustr;
 
 use crate::global::SAVES_OPEN_OPTIONS;
 use crate::helpers::alloc::alloc;
-use crate::helpers::manifest::{get_manifest_path, read_manifest, write_manifest};
+use crate::helpers::manifest::{read_manifest, write_manifest};
 use crate::helpers::save::{get_saves, read_save, remove_save, write_save};
-use crate::models::manifest::{Manifest, Save};
+use crate::models::manifest::Save;
 use crate::types::list::{List, UplayList};
 use crate::types::overlapped::UplayOverlapped;
 use crate::types::save::UplaySave;

@@ -195,11 +195,7 @@ pub unsafe fn uplay_save_set_name(save_handle: u32, name_utf8: *const c_char) ->
     fn_debug!("SaveHandle: {} NameUtf8: {:?}", save_handle, name_utf8);
 
     let result = (|| -> Result<()> {
-        let mut manifest = if !get_manifest_path()?.exists() {
-            Manifest { saves: Vec::new() }
-        } else {
-            read_manifest()?
-        };
+        let mut manifest = read_manifest().unwrap_or_default();
 
         let save_id = save_handle;
         let save_name = CStr::from_ptr(name_utf8).to_str()?.to_string();

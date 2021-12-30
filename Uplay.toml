@@ -1,0 +1,18 @@
+[Uplay]
+Name = "YourGameName"
+Saves = ""
+CdKeys = [""]
+Language = "en-US"
+OfflineMode = true
+InstallHooks = true
+
+[Uplay.Log]
+Write = true
+Path = "Uplay.log"
+
+[Uplay.Profile]
+AccountId = "JosephSeed"
+Email = "123@nonameemail.com"
+Username = "JosephSeed"
+Password = "123456"
+Ticket = "JustSomeRandomTicket"

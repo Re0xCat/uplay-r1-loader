@@ -1,6 +1,6 @@
 [Uplay]
 Name = "YourGameName"
-Saves = ""
+Saves = "<default>"
 CdKeys = [""]
 Language = "en-US"
 OfflineMode = true
